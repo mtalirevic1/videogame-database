@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<GridPane hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/css/style.css"/>
+    </stylesheets>
+    <columnConstraints>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+    </rowConstraints>
+    <children>
+        <Label fx:id="languageLabel" text="%language" GridPane.rowIndex="0"/>
+        <ChoiceBox fx:id="languageChoiceBox" onAction="#switchLanguage" GridPane.columnIndex="1" GridPane.columnSpan="2"
+                   GridPane.rowIndex="0"/>
+        <Label fx:id="usernameLabel" text="%username" GridPane.rowIndex="1"/>
+        <TextField fx:id="usernameField" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Label fx:id="passwordLabel" text="%password" GridPane.rowIndex="2"/>
+        <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Label fx:id="errorLabel" textFill="#ff5959" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        <ButtonBar prefHeight="40" GridPane.columnSpan="2" GridPane.rowIndex="4">
+            <buttons>
+                <Button fx:id="loginButton" onAction="#loginClick" text="%login"/>
+                <Button fx:id="registerButton" onAction="#registerClick" text="%register"/>
+                <Button fx:id="exitButton" onAction="#exitClick" text="%exit"/>
+            </buttons>
+        </ButtonBar>
+        <Label fx:id="quoteLabel" text="%quote" GridPane.rowIndex="5"/>
+        <Label fx:id="quoteBox" wrapText="true" GridPane.rowIndex="6" GridPane.columnSpan="2" GridPane.columnIndex="0"
+               maxWidth="400" minHeight="50"/>
+        <Label fx:id="authorLabel" GridPane.rowIndex="7" GridPane.columnIndex="1" alignment="BOTTOM_RIGHT"
+               maxWidth="200"/>
+    </children>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </padding>
+</GridPane>

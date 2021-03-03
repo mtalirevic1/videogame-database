@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+        <?import javafx.scene.image.*?>
+        <?import javafx.scene.layout.*?>
+        <?import javafx.scene.text.*?>
+
+<GridPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" minHeight="300" minWidth="400" maxWidth="600">
+<columnConstraints>
+    <ColumnConstraints>
+    </ColumnConstraints>
+    <ColumnConstraints />
+</columnConstraints>
+
+<rowConstraints>
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+</rowConstraints>
+<Label fx:id="developerName" wrapText="true" contentDisplay="CENTER" text=" " textAlignment="CENTER" GridPane.rowIndex="1"  >
+    <font>
+        <Font name="Arial Bold" size="36.0" />
+    </font>
+</Label>
+<Label fx:id="developerDescription" wrapText="true" contentDisplay="CENTER" text=" " textAlignment="CENTER" GridPane.rowIndex="2" GridPane.rowSpan="2" >
+    <font>
+        <Font name="Arial" size="22.0" />
+    </font>
+</Label>
+<ImageView fx:id="developerImage" GridPane.columnIndex="1" GridPane.rowSpan="3">
+
+</ImageView>
+</GridPane>

@@ -1,0 +1,6 @@
+.fieldCorrect {
+   -fx-control-inner-background: greenyellow;
+}
+.fieldIncorrect {
+   -fx-control-inner-background: lightpink;
+}

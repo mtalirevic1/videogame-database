@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="10.0.2" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="ba.unsa.etf.rpr.projekat.DTO.Developer">
+    <void property="description">
+     <string>Studio from Kiev known for the legendary Metro series.</string>
+    </void>
+    <void property="iconLink">
+     <string>https://pbs.twimg.com/profile_images/1085571793979613185/VgXmy9ph_400x400.jpg</string>
+    </void>
+    <void property="id">
+     <int>1</int>
+    </void>
+    <void property="name">
+     <string>4A Games</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="ba.unsa.etf.rpr.projekat.DTO.Developer">
+    <void property="description">
+     <string>Grand Theft Auto developers. Does more need to be said?</string>
+    </void>
+    <void property="iconLink">
+     <string>https://www.nicepng.com/png/detail/271-2716840_rockstar-games-filled-icon-rockstar-icon.png</string>
+    </void>
+    <void property="id">
+     <int>2</int>
+    </void>
+    <void property="name">
+     <string>Rockstar Games</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

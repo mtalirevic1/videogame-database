@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="mainGridPane" minHeight="600" minWidth="500" prefWidth="500" prefHeight="700"
+          xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <columnConstraints>
+        <ColumnConstraints/>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+    </rowConstraints>
+    <ImageView fx:id="gameImage" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0">
+
+    </ImageView>
+    <Label fx:id="gameName" alignment="CENTER" contentDisplay="CENTER" text=" " textAlignment="CENTER" wrapText="true"
+           GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="2">
+        <font>
+            <Font name="Arial Bold" size="24.0"/>
+        </font>
+    </Label>
+    <Label fx:id="genre" alignment="CENTER" contentDisplay="CENTER" text="%genreColon" textAlignment="CENTER"
+           wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="2">
+        <font>
+            <Font name="Arial" size="18.0"/>
+        </font>
+    </Label>
+    <Label fx:id="gameGenre" alignment="CENTER" contentDisplay="CENTER" text=" " textAlignment="CENTER" wrapText="true"
+           GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <font>
+            <Font name="Arial" size="18.0"/>
+        </font>
+    </Label>
+    <Label fx:id="developer" alignment="CENTER" contentDisplay="CENTER" text="%developerColon" textAlignment="CENTER"
+           wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="3">
+        <font>
+            <Font name="Arial" size="18.0"/>
+        </font>
+    </Label>
+    <Label fx:id="gameDeveloper" alignment="CENTER" contentDisplay="CENTER" text=" " GridPane.columnIndex="1"
+           textAlignment="CENTER" wrapText="true" GridPane.rowIndex="3">
+        <font>
+            <Font name="Arial" size="18.0"/>
+        </font>
+    </Label>
+    <Label fx:id="releaseDate" alignment="CENTER" contentDisplay="CENTER" text="%releaseDateColon"
+           GridPane.columnIndex="0" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="4">
+        <font>
+            <Font name="Arial" size="18.0"/>
+        </font>
+    </Label>
+    <Label fx:id="gameReleaseDate" alignment="CENTER" contentDisplay="CENTER" text=" " GridPane.columnIndex="1"
+           textAlignment="CENTER" wrapText="true" GridPane.rowIndex="4">
+        <font>
+            <Font name="Arial" size="18.0"/>
+        </font>
+    </Label>
+    <Label fx:id="scoreLabel" text="%avgScoreColon" GridPane.rowIndex="5" GridPane.columnIndex="0">
+        <font>
+            <Font name="Arial" size="18.0"/>
+        </font>
+    </Label>
+    <Label fx:id="scoreNumberLabel" GridPane.rowIndex="5" GridPane.columnIndex="1">
+        <font>
+            <Font name="Arial" size="18.0"/>
+        </font>
+    </Label>
+    <Label fx:id="description" alignment="TOP_LEFT" contentDisplay="CENTER"
+           text="%descriptionColon" textAlignment="LEFT" wrapText="true" GridPane.columnIndex="0" minHeight="100"
+           GridPane.rowIndex="6">
+        <font>
+            <Font name="Arial" size="18.0"/>
+        </font>
+    </Label>
+    <Label fx:id="gameDescription" alignment="TOP_LEFT" contentDisplay="CENTER" minHeight="100"
+           text=" " textAlignment="LEFT" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.columnSpan="2"
+           GridPane.rowSpan="2">
+        <font>
+            <Font name="Arial" size="18.0"/>
+        </font>
+    </Label>
+    <Button fx:id="reviewButton" GridPane.rowIndex="8" GridPane.columnIndex="0">
+        <font>
+            <Font name="Arial" size="16.0"/>
+        </font>
+    </Button>
+    <Label text="%gameReviewsColon" alignment="BOTTOM_LEFT" minHeight="50" GridPane.columnIndex="0" GridPane.rowIndex="9">
+        <font>
+            <Font name="Arial" size="18.0"/>
+        </font>
+    </Label>
+    <ScrollPane fx:id="reviewScrollPane" GridPane.rowIndex="10" GridPane.columnIndex="0" GridPane.columnSpan="3" fitToWidth="true" prefWidth="Infinity" minWidth="500">
+    <ListView fx:id="reviewListView" />
+    </ScrollPane>
+</GridPane>

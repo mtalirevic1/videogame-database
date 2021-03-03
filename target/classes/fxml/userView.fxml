@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            prefHeight="500.0" prefWidth="650.0"
+            fx:id="mainBorder">
+    <stylesheets>
+        <URL value="@/css/style.css" />
+    </stylesheets>
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <Menu text="%storageOptions" fx:id="menuOptions">
+                <MenuItem fx:id="menuDB" text="%database" onAction="#switchDb"/>
+                <MenuItem fx:id="menuXML" text="%xmlFiles" onAction="#switchXml"/>
+            </Menu>
+            <Menu text="%help" fx:id="menuHelp">
+                <MenuItem fx:id="menuAbout" text="%about" onAction="#clickAbout"/>
+            </Menu>
+            <Menu fx:id="reportMenu" text="%reports">
+                <MenuItem fx:id="reportItem" text="%showReport" onAction="#showReport"/>
+            </Menu>
+            <Menu fx:id="usernameMenu" text="Anonymous">
+                <MenuItem fx:id="logoutOption" text="%logout" onAction="#clickLogout"/>
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+
+        <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+            <tabs>
+                <Tab text="%videoGames" fx:id="videoGameTab">
+                    <VBox>
+                        <HBox prefHeight="30" alignment="CENTER_LEFT" spacing="10">
+                            <Button text="%search" prefWidth="70" onAction="#searchVG" fx:id="searchButton"/>
+                            <TextField fx:id="searchFieldVG" prefWidth="300"/>
+                            <Label text="%searchBy"/>
+                            <ChoiceBox fx:id="choiceBoxVG" prefWidth="150"/>
+                        </HBox>
+                        <ScrollPane fx:id="scrollPaneVG" fitToWidth="true" fitToHeight="true" prefHeight="400">
+                            <TilePane fx:id="tilePaneVG" hgap="10" vgap="10" prefTileWidth="100" prefTileHeight="100"/>
+                        </ScrollPane>
+                    </VBox>
+                </Tab>
+                <Tab text="%developers" fx:id="developerTab">
+                    <VBox>
+                        <HBox prefHeight="30" alignment="CENTER_LEFT" spacing="10">
+                            <Button text="%search" prefWidth="70" onAction="#searchDV"/>
+                            <TextField fx:id="searchFieldDV" prefWidth="300"/>
+                            <Label text="%searchBy"/>
+                            <ChoiceBox fx:id="choiceBoxDV" prefWidth="150"/>
+                        </HBox>
+                        <ScrollPane fx:id="scrollPaneDV" fitToWidth="true" fitToHeight="true" prefHeight="400">
+                            <TilePane fx:id="tilePaneDV" hgap="10" vgap="10"  prefTileWidth="100" prefTileHeight="100"/>
+                        </ScrollPane>
+                    </VBox>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </center>
+</BorderPane>

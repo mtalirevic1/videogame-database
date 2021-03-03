@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<GridPane hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/css/style.css"/>
+    </stylesheets>
+    <columnConstraints>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+    </rowConstraints>
+    <children>
+        <Label text="%nameColon"/>
+        <TextField fx:id="nameField" GridPane.columnIndex="1"/>
+        <Label text="%genreColon" GridPane.rowIndex="1"/>
+        <TextField fx:id="genreField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Label text="%developerColon" GridPane.rowIndex="2"/>
+        <ChoiceBox fx:id="developerChoiceBox" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Label text="%releaseDateColon" GridPane.rowIndex="3"/>
+        <DatePicker fx:id="releaseDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        <Label text="%imageColon" GridPane.rowIndex="4"/>
+        <TextField fx:id="imageField" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+        <Label text="%descriptionColon" GridPane.rowIndex="5" prefHeight="100" minHeight="50" maxHeight="150"
+               alignment="TOP_LEFT"/>
+        <TextArea fx:id="descriptionField" GridPane.columnIndex="1" GridPane.rowIndex="5" prefHeight="100"
+                  minHeight="50"
+                  maxHeight="150" maxWidth="180" prefRowCount="4"/>
+        <ButtonBar prefHeight="40" GridPane.columnSpan="2" GridPane.rowIndex="6">
+            <buttons>
+                <Button fx:id="okButton" mnemonicParsing="false" text="Ok" onAction="#okClick"/>
+                <Button fx:id="cancelButton" mnemonicParsing="false" text="Cancel" onAction="#cancelClick"/>
+            </buttons>
+        </ButtonBar>
+    </children>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </padding>
+</GridPane>
